@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name:" id="text"></div><br/>
+        <span id="error1"></span> <br/>
+        <label>Email</label>
+        <input type="text" placeholder="Enter your Email:" id="email"></div><br/>
+        <span id="error2"></span> <br/>
+        <button onclick="test()">Submit</button>
+        <script>
+            function test(){
+                var test = document.getElementById("text").value;
+                var email = document.getElementById("email").value;
+                document.getElementById("error1").innerHTML=" ";
+                document.getElementById("error2").innerHTML=" ";
+
+                if(text === " "){
+                    document.getElementById("error1").innerHTML="Enter name";
+                }
+                if(email === " "){
+                    document.getElementById("error2").innerHTML="Enter email";
+                }
+                else if(!email.include('@')){
+                    document.getElementById("error2").innerHTML="Enter a valid email";
+                }
+            }
+        </script>
+        
+
+    </div>
+</body>
+</html>

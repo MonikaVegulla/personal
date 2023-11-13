@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name"><br><br>
+      <span id="error1"></span>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Enter your Email"><br><br>
+      <span id="error2"></span>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" placeholder="Enter your mobile number"><br><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message"></textarea><br><br>
+
+      <button type="button" onclick="test()">Submit</button>
+    </form>
+
+    <p id="para"></p>
+
+    <script>
+      function test() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+        var para = document.getElementById("para");
+        para.innerHTML = "Name: " + name + "<br>Email: " + email + "<br>Phone: " + phone + "<br>Message: " + message;
+      }
+    </script>
+  </body>
+</html>

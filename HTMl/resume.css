@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1100px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 3500 5500 rgba(0,0,0,0,1);
+}
+
+.container .left_side{
+    position: relative;
+    background: #003143;
+    padding: 40px;
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profileText .image{
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.profileText h2{
+    color: #fff;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* .profileText h2 span{
+    font-size: 0.8;
+    font-weight: 300;
+    color: aquamarine;
+} */
+
+.about{
+    justify-content: space-between;
+    font-style: italic;
+    display: block;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.contactinfo{
+    padding-top: 40px;
+}
+
+.contactinfo ul{
+    position: relative;
+}
+
+.contactinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactinfo ul li .icon{
+    display: inline;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #03a9f4;
+}
+
+.contactinfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+/* .contactinfo.education li{
+    margin-bottom: 15px;
+} */
+
+/* .contactinfo.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+} */
+
+/* .contactinfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+} */
+
+/* .contactinfo.education h4{
+    color: #fff;
+    font-weight: 300;
+} */
+
+.contactinfo.profile{
+    position: relative;
+    color: aliceblue;
+    font-family: sans-serif;
+    justify-content: space-between;
+} 
+.container right_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+ .ed .title2{
+    text-transform: uppercase;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ed {
+    margin-top: 0%;
+    padding-left: 20px;
+}
+.year{
+    font-family: sans-serif;
+    padding-left: 20px;
+}
+/* .ed .title2 h5{
+    font-weight: 500;
+} */
+
+.language .title3{
+    text-transform: uppercase;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.lang{
+    font-family: sans-serif;
+    padding-left: 40px;
+}
+
+.softskill .title4{
+    text-transform: uppercase;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.skill .title5{
+    text-transform: uppercase;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 20px; 
+}

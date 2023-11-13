@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span id="display">0</span><br/>
+        <button onclick="increase()">+</button>
+        <button onclick="decrease()">-</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <script>
+        let count = 0;
+        var d=document.getElementById("display");
+
+        function increase(){
+            count ++;
+            d.innerText= count;
+        }
+
+        function decrease(){ 
+            count --;
+            d.innerText= count;
+        }
+
+        function reset(){
+            count = 0;
+            d.innerText= count;
+        }
+    </script>
+</body>
+</html>
